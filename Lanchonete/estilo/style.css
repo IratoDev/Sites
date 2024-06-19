@@ -1,0 +1,699 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ranchers&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 190px;
+  background-size: 50%;
+}
+@media screen and (max-width: 640px) {
+  header {
+    position: fixed;
+    height: 120px;
+  }
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  min-width: 200px;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+header .logo img {
+  width: clamp(200px, 25vw, 250px);
+}
+header .navegation {
+  display: flex;
+  justify-content: space-evenly;
+  grid-gap: 1em;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+header .navegation .conteinerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 1em;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
+}
+header .navegation .conteinerMenu a {
+  text-decoration: none;
+  color: #fff;
+}
+header .navegation .conteinerMenu button {
+  border: none;
+  background: none;
+  font-family: "Ranchers";
+  font-size: clamp(20px, 3vw, 25px);
+  font-weight: normal;
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  header .navegation .conteinerMenu {
+    display: none;
+  }
+}
+header .navegation .conteinerMenuMobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  header .navegation .conteinerMenuMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+  }
+  header .navegation .conteinerMenuMobile .btn-menu {
+    width: clamp(40px, 15vw, 60px);
+    background-color: #902B00;
+    border: none;
+    border-radius: 10px;
+  }
+  header .navegation .conteinerMenuMobile .btn-menu svg {
+    width: 100%;
+    height: 100%;
+    fill: #FFB800;
+  }
+  header .navegation .conteinerMenuMobile .btn-list {
+    display: flex;
+  }
+  header .navegation .conteinerMenuMobile .btn-close {
+    display: none;
+  }
+}
+header .navegation .redesocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 0.5em;
+  max-width: 170px;
+  width: 100%;
+  height: 100%;
+}
+header .navegation .redesocial .icons {
+  width: clamp(10px, 3vw, 32px);
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  header .navegation .redesocial {
+    display: none;
+  }
+}
+
+.navegation-mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+  width: 60%;
+  height: 100vh;
+  transform: translateX(-100vw);
+  background-color: #361000;
+  transition: transform 2s;
+}
+.navegation-mobile .conteiner-Menu-Mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #902B00;
+  width: 100%;
+  height: 50%;
+}
+.navegation-mobile .conteiner-Menu-Mobile button {
+  background: none;
+  border: none;
+}
+@media screen and (min-width: 640px) {
+  .navegation-mobile {
+    display: none;
+  }
+}
+.navegation-mobile a {
+  text-decoration: none;
+  color: #fff;
+}
+.navegation-mobile .conteinerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 1em;
+  width: 100%;
+  height: 50%;
+  margin-top: 8rem;
+}
+.navegation-mobile .conteinerMenu button {
+  border: none;
+  background: none;
+  font-family: "Ranchers";
+  font-size: clamp(20px, 3vw, 25px);
+  font-weight: normal;
+  color: #fff;
+}
+.navegation-mobile .redesocial {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-gap: 1em;
+  width: 100%;
+  height: 30%;
+}
+.navegation-mobile .redesocial .icons {
+  width: clamp(20px, 3vw, 32px);
+  color: #fff;
+}
+
+/*seção home*/
+#Home {
+  display: flex;
+  justify-content: space-betweens;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFB800;
+}
+@media screen and (max-width: 640px) {
+  #Home {
+    flex-direction: column;
+  }
+}
+#Home .secao-home-Text {
+  display: flex;
+  align-items: center;
+  max-width: 620px;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Text {
+    align-items: center;
+    justify-content: center;
+  }
+}
+#Home .secao-home-Text .box-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 540px;
+  width: 100%;
+  z-index: 3;
+  margin-top: 6rem;
+  margin-left: 40px;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Text .box-text {
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    margin-top: 8rem;
+    margin-left: 0;
+    padding: 1em;
+  }
+}
+#Home .secao-home-Text .box-text h1 {
+  font-family: "Ranchers";
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: normal;
+  color: #902B00;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Text .box-text h1 {
+    text-align: center;
+  }
+}
+#Home .secao-home-Text .box-text p {
+  font-family: "Poppins";
+  font-size: clamp(20px, 2vw, 25px);
+  font-weight: bold;
+  color: #902B00;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Text .box-text p {
+    text-align: center;
+  }
+}
+#Home .secao-home-Text .box-text .fundoText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: nowrap;
+  padding: 0.1em;
+  width: clamp(130px, 15vw, 180px);
+  color: #fff;
+  background-color: #902b00;
+}
+#Home .secao-home-Text .box-text .fundoText h4 {
+  font-family: "Poppins";
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: bold;
+}
+#Home .secao-home-Img {
+  position: absolute;
+  right: 0;
+  width: clamp(280px, 70vw, 740px);
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+  }
+}
+#Home .secao-home-Img .conteiner-form {
+  position: relative;
+  max-width: 740px;
+  width: 100%;
+  height: 100%;
+}
+#Home .secao-home-Img .conteiner-form svg {
+  position: absolute;
+  right: 0;
+  top: -1.1em;
+  fill: #902b00;
+  flex: 1;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Img .conteiner-form svg {
+    transform: scaleY(-1);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+}
+#Home .secao-home-Img .conteiner-form img {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+}
+@media screen and (max-width: 640px) {
+  #Home .secao-home-Img .conteiner-form img {
+    max-width: 250px;
+    right: 2vw;
+  }
+}
+
+/*fim seção home*/
+/*Destaque*/
+#Destaque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFCC48;
+}
+@media screen and (max-width: 640px) {
+  #Destaque {
+    flex-direction: column;
+  }
+}
+#Destaque .secao-Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  #Destaque .secao-Text {
+    max-width: none;
+    height: 40%;
+  }
+}
+#Destaque .secao-Text .box-text-destaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(150px, 35vw, 400px);
+  height: 90%;
+  max-height: 300px;
+  border-radius: 20px;
+  background-color: #902B00;
+}
+@media screen and (max-width: 640px) {
+  #Destaque .secao-Text .box-text-destaque {
+    max-width: 350px;
+    width: 85%;
+  }
+}
+#Destaque .secao-Text .box-text-destaque h1 {
+  font-family: "Ranchers";
+  font-size: clamp(40px, 4vw, 60px);
+  font-weight: normal;
+  color: #fff;
+}
+#Destaque .secao-Text .box-text-destaque p {
+  font-family: "Poppins";
+  font-size: clamp(10px, 2vw, 20px);
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em;
+  color: #fff;
+}
+#Destaque .secao-Carrosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 880px;
+  width: 100%;
+  height: 80%;
+}
+@media screen and (max-width: 640px) {
+  #Destaque .secao-Carrosel {
+    height: 60%;
+  }
+}
+#Destaque .secao-Carrosel #conteiner-carrosel {
+  display: flex;
+  flex-direction: column;
+  width: clamp(200px, 90%, 700px);
+  height: 95%;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .slides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  overflow-x: hidden;
+  transition: transform 0.5s ease;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .slides .produtoDestaque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  max-height: 400px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+@media screen and (max-width: 640px) {
+  #Destaque .secao-Carrosel #conteiner-carrosel .slides .produtoDestaque {
+    max-width: 450px;
+    width: 100%;
+    max-height: 300px;
+  }
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .slides .produtoDestaque img {
+  width: 90%;
+  height: 70%;
+  margin-bottom: 0.5em;
+  border-radius: 20px;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .slides .produtoDestaque h2 {
+  font-family: "Ranchers";
+  font-size: clamp(20px, 4vw, 25px);
+  font-weight: bolder;
+  color: #902B00;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .slides .produtoDestaque h3 {
+  font-family: "Poppins";
+  font-size: clamp(10px, 4vw, 15px);
+  font-weight: normal;
+  color: #000;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .carrosel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0.4em;
+  width: 100%;
+  height: 10%;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .carrosel-button input {
+  width: clamp(40px, 15vw, 90px);
+  padding-bottom: 0.5em;
+  border-radius: 20px;
+  border: none;
+  background-color: #902B00;
+  cursor: pointer;
+}
+#Destaque .secao-Carrosel #conteiner-carrosel .carrosel-button .btn-carrosel:focus {
+  outline: none;
+  background-color: #333;
+}
+
+/*fim Destaque*/
+/*Serviço*/
+#Service {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  padding-bottom: 1.5em;
+  background-color: #631E00;
+}
+@media screen and (max-width: 640px) {
+  #Service {
+    flex-direction: column;
+    height: 700px;
+  }
+}
+#Service .box-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  #Service .box-service {
+    width: 70%;
+    height: 30%;
+  }
+}
+#Service .box-service img {
+  width: clamp(150px, 20vw, 200px);
+  height: 200px;
+}
+#Service .box-service h2 {
+  font-family: "Ranchers";
+  font-size: clamp(15px, 3vw, 25px);
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+#Service .box-service p {
+  font-family: "Poppins";
+  font-size: clamp(10px, 1.5vw, 15px);
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+}
+
+/*fim Serviço*/
+/*Sobre*/
+#Sobre {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFB800;
+}
+@media screen and (max-width: 640px) {
+  #Sobre {
+    height: 80vh;
+  }
+}
+#Sobre .secao-text-sobre {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url("../img/fundo-sobre.png") no-repeat;
+  background-size: 70% 100%;
+}
+@media screen and (max-width: 640px) {
+  #Sobre .secao-text-sobre {
+    justify-content: center;
+    background-size: 100% 100%;
+  }
+}
+#Sobre .secao-text-sobre .box-text-sobre {
+  position: relative;
+  width: clamp(250px, 70vw, 570px);
+  height: 280px;
+  margin-left: 3em;
+}
+@media screen and (max-width: 640px) {
+  #Sobre .secao-text-sobre .box-text-sobre {
+    margin-left: 0;
+    margin-bottom: 5em;
+  }
+}
+#Sobre .secao-text-sobre .box-text-sobre h1 {
+  font-family: "Ranchers";
+  font-size: clamp(40px, 4vw, 60px);
+  font-weight: normal;
+  margin-bottom: 0.2em;
+  color: #fff;
+}
+#Sobre .secao-text-sobre .box-text-sobre p {
+  font-family: "Poppins";
+  font-size: clamp(10px, 2vw, 15px);
+  font-weight: normal;
+  color: #fff;
+}
+#Sobre .secao-text-sobre img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: clamp(200px, 40vw, 540px);
+  max-height: 540px;
+  flex: 1;
+  transform: scaleX(-1);
+  filter: drop-shadow(1px 10px 5px #000);
+}
+
+/*fim Sobre*/
+/*Endereço*/
+#Endereco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFCC48;
+}
+@media screen and (max-width: 640px) {
+  #Endereco {
+    height: 50vh;
+  }
+}
+#Endereco .box-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1em;
+  width: clamp(230px, 50vw, 600px);
+  padding: 0.5em;
+  background-color: #902B00;
+  border-radius: 20px;
+}
+#Endereco .box-info h1 {
+  font-family: "Ranchers";
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: normal;
+  margin-bottom: 0.2em;
+  color: #FFB800;
+}
+#Endereco .box-info p {
+  font-family: "Poppins";
+  font-size: clamp(10px, 3vw, 15px);
+  font-weight: normal;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
+  color: #fff;
+}
+#Endereco .conteiner-Endereco {
+  width: clamp(240px, 80vw, 1200px);
+  height: 90%;
+}
+#Endereco .conteiner-Endereco iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*fim Endereço*/
+/*Contato*/
+#Contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 230px;
+  background-color: #631E00;
+}
+#Contato h1 {
+  font-family: "Ranchers";
+  font-size: clamp(25px, 4vw, 40px);
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 1em;
+}
+#Contato a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#Contato a h3 {
+  font-family: "Poppins";
+  font-size: clamp(10px, 1.5vw, 25px);
+  color: #fff;
+  margin-top: 0.5em;
+}
+#Contato .conteiner-contato {
+  display: flex;
+  justify-content: space-evenly;
+  grid-gap: 0.5em;
+  max-width: 400px;
+  width: 100%;
+}
+#Contato .conteiner-contato .icons-contato {
+  width: clamp(30px, 5vw, 42px);
+  color: #fff;
+}
+
+/*fim Contato*/
+/*Rodape*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  background-color: #FFB800;
+}
+footer img {
+  width: clamp(250px, 30vw, 300px);
+  margin-bottom: 0.5em;
+}
+footer p {
+  font-family: "Poppins";
+  font-size: clamp(10px, 4vw, 20px);
+  color: #902B00;
+  text-align: center;
+}
+
+/*fim Rodape*//*# sourceMappingURL=style.css.map */
