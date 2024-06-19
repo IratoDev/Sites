@@ -1,0 +1,368 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacir Lanches</title>
+<link rel="stylesheet" href="./estilo/style.css">
+
+</head>
+
+<header id="cabecalho"> 
+
+<div class="logo">
+<img src="./img/logo.png" alt="">
+</div>
+
+<nav class="navegation">
+
+  <div class="conteinerMenu">
+    <button><a href="#Home"> Home </a></button>
+    <button><a href="./cardapio/cardapio.html">Cardapio</a></button>
+    <button><a href="#Contato">Contato</a></button>
+    <button><a href="#Endereco">Endereço</a></button>
+</div>
+
+<div class="conteinerMenuMobile">
+
+<button class="btn-menu">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="btn-menu-mobile bnt-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="btn-menu-mobile btn-close" viewBox="0 0 16 16">
+  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+</svg>
+
+</button>
+
+</div>
+
+<div class="redesocial">
+
+<!-- icon whatsapp-->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+
+<!-- icon instagram -->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+
+<!-- icon telefone-->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+
+</div>
+
+</nav>
+
+</header>
+
+<script>
+
+let cabecalho = document.querySelector("#cabecalho");
+
+window.addEventListener("scroll", ()=>{
+
+const positionscroll = window.scrollY;
+
+if(window.innerWidth <= 640){
+
+if(positionscroll > 0){
+cabecalho.style.backgroundColor = "#631E00";
+}else{
+  cabecalho.style.backgroundColor = "transparent";
+}
+
+}
+
+})
+
+</script>
+
+<!-- navegação mobile -->
+<nav class="navegation-mobile" >
+
+<div class="conteinerMenu">
+  <button><a href="#Home"> Home </a></button>
+<button><a href="./cardapio/cardapio.html">Cardapio</a></button>
+<button><a href="#Contato">Contato</a></button>
+<button><a href="#Endereco">Endereço</a></button>
+</div>
+
+<div class="redesocial">
+
+<!-- icon whatsapp-->
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+
+<!-- icon instagram -->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+
+<!-- icon telefone-->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+
+</div>
+</nav>
+
+
+<body>
+  
+<div id="Home">
+
+<div class="secao-home-Text">
+
+<div class="box-text">
+<h1>NÃ0 PASSE FOME</h1>
+
+<p> Experimente o sabor autêntico
+do melhor </p> <span class="fundoText"> <h4>Food Truck !</h4></span>
+
+</div>
+
+</div>
+
+<div class="secao-home-Img">
+
+<div class="conteiner-form">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 742 620" >
+  <path class="form" d="M101.208 0C97.3123 13.5165 97.1023 28.4188 101.687 43.4101L102.898 47.3674C114.791 86.2542 92.3653 127.313 53.219 138.323C-15.0893 157.534 -17.9413 253.311 49.1029 276.552L75.1586 285.585C120.033 301.141 136.313 356.204 107.114 393.662C62.7259 450.604 124.128 528.99 190.043 499.529L262.859 466.984C297.739 451.395 338.774 462.644 360.828 493.842L425.954 585.97C459.744 633.768 531.742 630.284 560.759 579.447L597.637 514.838C611.875 489.893 638.393 474.495 667.116 474.495H741.247V0L101.208 0Z" />
+</svg>
+
+<img src="./img/teste3.png" alt="">
+
+</div>
+
+</div>
+
+<script> 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new ResizeObserver(entries => {
+        const boxText = document.querySelector('.box-text');
+        const containerForm = document.querySelector('.form');
+
+        const boxTextRect = boxText.getBoundingClientRect();
+        const containerFormRect = containerForm.getBoundingClientRect();
+
+        const textElements = boxText.querySelectorAll('h1,p');
+        textElements.forEach(element => {
+            const letters = element.textContent.split('');
+            const letterSpans = letters.map(letter => `<span>${letter}</span>`);
+            element.innerHTML = letterSpans.join('');
+
+            const spans = element.querySelectorAll('span');
+            spans.forEach(span => {
+
+
+                const spanRect = span.getBoundingClientRect();
+                if (spanRect.right > containerFormRect.left) {
+                    span.style.color = '#a33202';
+                } else {
+                    span.style.color = '#902b00';
+                }
+            });
+        });
+    });
+
+    observer.observe(document.body);
+});
+
+
+</script>
+
+</div>
+
+<div id="Destaque">
+
+<div class="secao-Text">
+
+<div class="box-text-destaque">
+
+<h1>Mais Pedidos</h1>
+
+<p>Confira os nossos lanches mais pedidos, cuidadosamente preparados para garantir uma experiência única.</p>
+
+</div>
+  
+</div>
+
+<div class="secao-Carrosel">
+
+<div id="conteiner-carrosel">
+
+<div class="slides">
+
+<div class="produtoDestaque">
+
+<img src="./img/destaque1.jpeg" alt="">
+
+<h2>DESTAQUE</h2>
+<h3>R$ 20,00</h3>
+
+</div>
+
+<div class="produtoDestaque" >
+
+<img src="./img/destaque2.jpeg" alt="">
+<h2>DESTAQUE</h2>
+<h3>R$ 30,00</h3>
+
+</div>
+
+<div class="produtoDestaque" >
+
+<img src="./img/destaque3.jpeg" alt="">
+<h2>DESTAQUE</h2>
+<h3>R$ 22,00</h3>
+
+</div>
+
+<div class="produtoDestaque">
+
+<img src="./img/destaque4.jpeg" alt="">
+<h2>DESTAQUE</h2>
+<h3>R$ 23,00</h3>
+
+</div>
+
+</div>
+
+<div class="carrosel-button">
+<input class="btn-carrosel" type="button" value="">
+<input class="btn-carrosel" type="button" value="">
+<input class="btn-carrosel" type="button" value="">
+<input class="btn-carrosel" type="button" value=""> 
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="Service">
+
+<div class="box-service">
+<img src="./img/Food_illustration-removebg-preview.png" alt="">
+<h2>LANCHES ARTESANAIS</h2>
+<p>Delicie-se com sabor único dos nossos lanche artesanal</p>
+</div>
+
+<div class="box-service">
+<img src="./img/FAST_FOOD_ILLUSTRATIONS_V1-removebg-preview.png" alt="">
+<h2>BEBIDAS NATURAIS</h2>
+<p>Acompanhe nosso lanche artesanal com uma seleção de bebidas refrescantes, perfeitas para complementar cada mordida</p>
+</div>
+
+<div class="box-service">
+<img src="./img/wraps_clip_art_illustration_for_menu__poster__web-removebg-preview.png" alt="">
+<h2>OPÇÕES VEGETARIANAS</h2>
+<p>Experimente nossos lanches vegetarianos: uma fusão deliciosa de sabores naturais e ingredientes frescos</p>
+</div>
+  
+</div>
+
+<div id="Sobre">
+
+<div class="secao-text-sobre">
+
+<div class="box-text-sobre">
+<h1>Conheça Nossa Historia</h1>
+<p>Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição tipográfica. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500, quando um impressor desconhecido pegou uma prova de tipos e a misturou para fazer um livro de espécimes de tipos. Ela sobreviveu não apenas a cinco séculos, mas também ao salto para a composição tipográfica eletrônica, </p>
+</div>
+
+<img src="./img/caminhao.png" alt="">
+
+</div>
+
+
+</div>
+
+<div id="Endereco">
+
+<div class="box-info">
+  <h1>Horarios de funcionamento</h1>
+
+<p>Segunda-feira: 19h - 23h
+  Terça-feira: 19h - 23h
+  Quarta-feira: 19h - 23h
+
+  Quinta-feira: 19h - 23h
+  Sexta-feira: 19h - 23h
+  Sábado: 19h - 23h
+</p>
+
+</div>
+
+<div class="conteiner-Endereco">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.2685546440839!2d-51.147801930485144!3d-23.276752766738948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb44fac73ad2cf%3A0xe65fcee7d6c5d164!2sRua%20Antonio%20Alves%20Resende%2C%20328%20-%20Jardim%20Tropical%2C%20Londrina%20-%20PR%2C%2086087-640!5e0!3m2!1spt-BR!2sbr!4v1717188252463!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</div>
+
+<div id="Contato">
+
+<h1>Fale conosco</h1>
+
+<div class=" conteiner-contato">
+
+<!-- icon whatsapp-->
+<a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons-contato" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+</svg>
+<h3>(XX)xxxxxx</h3>
+</a>
+
+
+<!-- icon instagram -->
+
+<a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons-contato" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+<h3>@xxxxxxxx</h3>
+</a>
+
+<!-- icon telefone-->
+
+<a href="#">
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icons-contato" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg>
+<h3>(XX)xxxxxx</h3>
+</a>
+
+
+</div>
+
+</div>
+
+</body>
+
+<footer>
+
+<img src="./img/logo.png" alt="">
+
+<p>Copyright © 2024 IratoDev.com Todos os direitos reservados.</p>
+
+</footer>
+
+<script src="./controle/carrosel-card.js"></script>
+<script src="./controle/menu.js"></script>
+<script src="./controle/produtos.js"></script>
+
+</html>
